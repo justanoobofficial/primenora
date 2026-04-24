@@ -27,12 +27,12 @@ export function Footer() {
               WhatsApp
             </Link>
             <Link
-              href="https://instagram.com"
+              href="https://instagram.com/primenora_"
               target="_blank"
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white/85"
             >
               <Instagram size={16} />
-              Instagram
+              @primenora_
             </Link>
           </div>
         </div>
@@ -53,15 +53,15 @@ export function Footer() {
           <div className="mt-5 space-y-4 text-sm text-white/72">
             <p className="flex items-start gap-3">
               <MapPin size={18} className="mt-0.5 text-[var(--accent)]" />
-              Lagos, Nigeria
+              16 Dele Ashiru Str
             </p>
             <p className="flex items-start gap-3">
               <Phone size={18} className="mt-0.5 text-[var(--accent)]" />
-              +234 800 000 0000
+              +234 806 207 7957
             </p>
             <p className="flex items-start gap-3">
               <Mail size={18} className="mt-0.5 text-[var(--accent)]" />
-              hello@primenora.com
+              chynex4real@yahoo.com
             </p>
           </div>
         </div>

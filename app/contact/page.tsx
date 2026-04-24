@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock3, Instagram, Mail, MapPin, MessageCircleMore, Truck } from "lucide-react";
+import { Clock3, Instagram, Mail, MapPin, MessageCircleMore, Phone, Truck } from "lucide-react";
 import Link from "next/link";
 
 import { ContactForm } from "@/components/contact/contact-form";
@@ -25,13 +25,19 @@ const contactCards = [
     icon: Mail,
     title: "Email",
     text: "For partnerships, formal inquiries, and admin communication.",
-    action: { label: "hello@primenora.com", href: "mailto:hello@primenora.com" }
+    action: { label: "chynex4real@yahoo.com", href: "mailto:chynex4real@yahoo.com" }
+  },
+  {
+    icon: Phone,
+    title: "Phone",
+    text: "Call directly for urgent order coordination and customer support.",
+    action: { label: "+234 806 207 7957", href: "tel:+2348062077957" }
   },
   {
     icon: Instagram,
     title: "Instagram",
     text: "Follow product updates, brand highlights, and customer engagement.",
-    action: { label: "@primenora", href: "https://instagram.com" }
+    action: { label: "@primenora_", href: "https://instagram.com/primenora_" }
   }
 ];
 
@@ -77,7 +83,7 @@ export default function ContactPage() {
               <div className="mt-6 space-y-4 text-sm text-white/76">
                 <p className="flex gap-3">
                   <MapPin size={18} className="mt-1 text-[var(--accent)]" />
-                  Lagos, Nigeria
+                  16 Dele Ashiru Str
                 </p>
                 <p className="flex gap-3">
                   <Truck size={18} className="mt-1 text-[var(--accent)]" />
