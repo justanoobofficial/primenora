@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="border-t border-[var(--border)] bg-[#140d1f] text-white">
       <div className="container-shell grid gap-12 py-16 lg:grid-cols-[1.4fr_0.8fr_0.8fr]">
         <div className="space-y-6">
-          <Logo />
+          <Logo variant="footer" />
           <p className="max-w-xl text-sm leading-7 text-white/72">
             {SITE_NAME} supplies trusted foodstuff and everyday essentials with a premium,
             professional service experience built for households, retailers, and bulk buyers
