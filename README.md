@@ -53,6 +53,15 @@ This repo already includes:
 - remote image support for Unsplash and Firebase Storage
 - server-friendly product fetching with fallback catalog data
 - SEO pages, sitemap, and robots setup
+- baseline security headers for deployment hardening
+
+## Security Notes
+
+- Keep real secrets only in Vercel Environment Variables, never in source code.
+- This project now prefers server-only Firebase env vars such as `FIREBASE_API_KEY`.
+- `NEXT_PUBLIC_WHATSAPP_NUMBER` is intentionally public because it is used in customer-facing chat links.
+- If you use Firestore in production, configure proper Firebase Security Rules. Frontend code alone does not protect your database.
+- Do not store admin credentials, service account JSON, private API keys, or payment secrets in `NEXT_PUBLIC_*` variables.
 
 ## Firebase Product Setup
 
