@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf9ff;
+  --surface: #ffffff;
+  --surface-muted: #f4efff;
+  --foreground: #17141f;
+  --muted-foreground: #655f73;
+  --primary: #6d28d9;
+  --primary-dark: #4c1d95;
+  --accent: #d4af37;
+  --accent-soft: #f7ebbf;
+  --border: rgba(109, 40, 217, 0.12);
+  --shadow: 0 24px 60px rgba(63, 26, 123, 0.12);
+  --container: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(212, 175, 55, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(109, 40, 217, 0.12), transparent 32%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container-shell {
+  width: min(calc(100% - 2rem), var(--container));
+  margin-inline: auto;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.76));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(22px);
+}
+
+.section-padding {
+  padding-block: 5rem;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(109, 40, 217, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(109, 40, 217, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.gold-ring {
+  position: relative;
+}
+
+.gold-ring::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.85), rgba(109, 40, 217, 0.38));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.premium-shadow {
+  box-shadow:
+    0 22px 60px rgba(63, 26, 123, 0.16),
+    0 6px 18px rgba(24, 24, 27, 0.06);
+}
+
+.prose-copy p {
+  color: var(--muted-foreground);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-block: 4rem;
+  }
+}
