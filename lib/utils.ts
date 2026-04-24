@@ -14,6 +14,7 @@ export function formatPrice(amount: number) {
 }
 
 export function createWhatsAppLink(message: string) {
-  const number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "2348000000000";
+  const number =
+    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.trim() || "2348000000000";
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
