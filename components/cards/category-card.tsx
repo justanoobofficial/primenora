@@ -19,6 +19,7 @@ export function CategoryCard({ title, description, image }: CategoryCardProps) {
           src={image}
           alt={title}
           fill
+          unoptimized
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#120d1c] via-[#120d1c]/25 to-transparent" />
